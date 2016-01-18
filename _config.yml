@@ -1,19 +1,19 @@
 # SITE CONFIGURATION
-baseurl: "/STA371H_Spring2015" # the subpath of your site, e.g. /blog
+baseurl: "/STA371H_Spring2016" # the subpath of your site, e.g. /blog
 url: "http://jgscott.github.io" # the base hostname & protocol for your site
-BASE_PATH: /STA371H_Spring2015
+BASE_PATH: /STA371H_Spring2016
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: STA 371H (Spring 2015)
+  title: STA 371H (Spring 2016)
   avatar: avatar.png
   gravatar: # email md5 hash
   description: "STA 371H: Statistics and Modeling (Honors) at UT-Austin" # used by search engines
   
   # Header and footer text
   header_text: >
-     <p>STA 371H  •  Spring 2015  •  MW 9:30 - 11:00, CBA 5.330
+     <p>STA 371H  •  Spring 2016 
      <br>
      Instructor: James Scott (james.scott@mccombs.utexas.edu)</p>
 
@@ -28,7 +28,7 @@ theme:
   dribbble: 
   facebook: 
   flickr: 
-  github: "jgscott/STA371H_Spring2015"
+  github: "jgscott/STA371H_Spring2016"
   google_plus: 
   instagram: 
   linkedin:  # full URL
