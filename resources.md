@@ -3,6 +3,10 @@ layout: page
 title: Resources
 ---
 
+### R Walkthroughs
+
+[These modules](http://jgscott.github.io/teaching/r/Rwalkthroughs.html) will teaching basic R skills by guiding you through various data analyses.
+
 ### Course packet
 
 This is in a state of continual editing, so I will post the
@@ -11,7 +15,7 @@ This is in a state of continual editing, so I will post the
 * [Introduction]({{ site.baseurl }}/files/00-FrontMatter-Intro.pdf)    
 * [Chapter 1]({{ site.baseurl }}/files/01-DataExploration.pdf)  
 * [Chapter 2]({{ site.baseurl }}/files/02-FittingEquations.pdf)  
-
+* [Chapter 3]({{ site.baseurl }}/files/03-PredictableAndUnpredictableVariation.pdf)  
 
 ### Notes on probability and utility  
 

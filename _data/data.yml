@@ -41,6 +41,7 @@
 - data: salary.csv
 - data: sap.zip
 - data: savings.csv
+- data: sclass.csv
 - data: sdrapcty.txt
 - data: seatbelts.csv
 - data: semicon.csv
@@ -50,7 +51,6 @@
 - data: SimpleJointDistribution.csv
 - data: spamfit.csv
 - data: spamtest.csv
-- data: springbok.csv
 - data: stocksjointdist.csv
 - data: sumsq.csv
 - data: Temp50Year.csv
