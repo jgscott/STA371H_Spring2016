@@ -56,6 +56,7 @@ mean(Price ~ Neighborhood, data=afc)
 cor(Price ~ FeelScore, data = afc)
 cor(Price ~ FoodScore, data = afc)
 
+plot(Price ~ FoodScore, data = afc)
 lm1 = lm(Price ~ FoodScore, data = afc)
 lm2 = lm(Price ~ FeelScore, data = afc)
 sd(resid(lm1))
