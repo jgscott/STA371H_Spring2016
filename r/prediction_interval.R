@@ -74,14 +74,14 @@ points(log(new_furry_critter), u_bound_log, col='blue', pch=19)
 # We can visualize the whole family of intervals
 plot(log(brain) ~ log(body), data=mammalsleep)
 abline(lm1)
-abline(a = beta_hat[1] - alpha*std_e, b = beta_hat[2], lty='dotted')
-abline(a = beta_hat[1] + alpha*std_e, b = beta_hat[2], lty='dotted')
+abline(a = beta_hat[1] - alpha*std_e, b = beta_hat[2], lty='solid', lwd=3)
+abline(a = beta_hat[1] + alpha*std_e, b = beta_hat[2], lty='solid', lwd=3)
 
 # Calculate the empirical coverage rate of the interval
 # Easiest to do on a residual plot
 plot(resid(lm1) ~ log(body), data=mammalsleep)
-abline(h = -alpha*std_e, lty='dotted')
-abline(h = alpha*std_e, lty='dotted')
+abline(h = -alpha*std_e, lty='dotted', lwd=3)
+abline(h = alpha*std_e, lty='dotted', lwd=3)
 
 # How many residuals exceed the alpha*std_e tolerance?
 sum(abs(resid(lm1)) > alpha*std_e)
