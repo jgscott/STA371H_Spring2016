@@ -9,6 +9,41 @@ abline(lm1)
 
 N = nrow(newspapers)
 
+
+# Values of x where we want to predict
+xstar = data.frame(Daily=1000)
+
+# Bootstrapped prediction intervals
+NMC = 10000
+boot_pred = do(NMC)*{
+  
+  # Fit a model to a bootstrapped sample
+  lmsub = lm(Sunday~Daily,data=resample(newspapers))
+  
+  # Form the prediction from the bootstrapped model estimate
+  # This step bakes in parameter uncertainty
+  yhat = predict.lm(lmsub,newdata=xstar)
+  
+  # Resample the residuals from the bootstrapped model
+  # This step bakes in residual uncertainty
+  eps = sample(resid(lmsub), size=1, replace=TRUE)
+  
+  # Form and return the notional future data points
+  ystar = yhat+eps
+  ystar
+}
+
+head(boot_pred)
+
+# Our sampling distribution for our prediction
+hist(boot_pred$X1)
+sd(boot_pred$X1)
+
+
+###
+## Now for many future points at once
+###
+
 # Values of x where we want to predict
 xstar = data.frame(Daily=seq(130,1210,by=10))
 m = nrow(xstar)  # number of points to predict
@@ -26,7 +61,7 @@ boot_pred = do(NMC)*{
 	
 	# Resample the residuals from the bootstrapped model
 	# This step bakes in residual uncertainty
-	eps = sample(lmsub$residuals, size=m, replace=TRUE)
+	eps = sample(resid(lmsub), size=m, replace=TRUE)
 	
 	# Form and return the notional future data points
 	ystar = yhat+eps
