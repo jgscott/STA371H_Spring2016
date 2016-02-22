@@ -15,7 +15,7 @@ abline(lmpop, col='red', lwd=5)
 coef(lmpop)
 
 # A Monte Carlo simulation of the sampling distribution of the OLS estimator
-my_sim = do(1000)*{
+my_sim = do(10000)*{
   this_sample = sample(simdata_pop, 50)
   lmsamp = lm(y ~ x, data=this_sample)
   coef(lmsamp)
