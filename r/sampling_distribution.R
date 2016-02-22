@@ -1,5 +1,6 @@
 ### Monte Carlo simulation: sampling distributions
 ### Closely follows the gone fishing walkthrough
+library(mosaic) 
 
 # The sample
 plot(y~x, data=simdata_samp)

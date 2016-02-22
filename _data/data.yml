@@ -29,6 +29,7 @@
 - data: LifeExpectancy.csv
 - data: marketmodel.csv
 - data: milk.csv
+- data: newspapers.csv
 - data: oil.txt
 - data: orings.csv
 - data: oxford.csv
