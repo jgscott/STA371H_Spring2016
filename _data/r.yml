@@ -6,4 +6,5 @@
 - r: milkprice.R
 - r: prediction_interval.R
 - r: race_boot.R
+- r: sampling_distribution.R
 - r: solder_boot.R
