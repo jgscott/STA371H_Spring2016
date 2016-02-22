@@ -1,5 +1,9 @@
+- r: bootstrapped_prediction.R
 - r: hw1.R
 - r: hw2.R
+- r: hw3.R
 - r: LifeExpectancy.R
 - r: milkprice.R
 - r: prediction_interval.R
+- r: race_boot.R
+- r: solder_boot.R

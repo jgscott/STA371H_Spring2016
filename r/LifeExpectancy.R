@@ -1,3 +1,5 @@
+library(mosaic)
+
 plot(LifeExp ~ PPGDP, data=LifeExpectancy)
 
 # A log transformation of GDP?
