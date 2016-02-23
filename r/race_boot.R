@@ -36,5 +36,5 @@ hist(boot2$sexM)
 # Pay particular attention here:
 # what is the strength of the evidence that 
 # there is a differential rate of slowing for men/women?
-hist(boot2$age.sexM)
+hist(boot2$age.sexM, 20)
 
