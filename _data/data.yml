@@ -36,6 +36,7 @@
 - data: partyaffil.csv
 - data: peakdemand.csv
 - data: pickup.csv
+- data: predimed.csv
 - data: profs.csv
 - data: respir.csv
 - data: rxntime.txt
