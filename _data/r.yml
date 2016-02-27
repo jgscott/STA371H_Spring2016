@@ -8,4 +8,5 @@
 - r: prediction_interval.R
 - r: race_boot.R
 - r: sampling_distribution.R
+- r: saratoga.R
 - r: solder_boot.R
