@@ -1,4 +1,5 @@
 - r: bootstrapped_prediction.R
+- r: cheese_demand.R
 - r: hw1.R
 - r: hw2.R
 - r: hw3.R
