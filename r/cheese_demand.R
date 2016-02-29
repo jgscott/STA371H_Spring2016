@@ -73,7 +73,7 @@ summary(boot2)
 
 # Compare with lm1: displays have a lower estimated effect.
 # Therefore important to account for store-level variability.
-exp(confint(boot1$disp))
+exp(confint(boot2$disp))
 
 # This is the best answer for Part A: 35-43%
 exp(confint(boot2$disp))
