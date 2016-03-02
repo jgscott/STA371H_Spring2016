@@ -181,7 +181,6 @@ out2$maximum
 
 
 # Show the profit curves with optimal prices
-curve(profit_display(x, my_cost, store='DALLAS/FT. WORTH - KROGER CO'), col='blue', from=1.5, to=4)
-curve(profit_no_display(x, my_cost, store='DALLAS/FT. WORTH - KROGER CO'), col='red', add=TRUE)
 abline(v=out1$maximum, col='blue')
 abline(v=out2$maximum, col='red')
+

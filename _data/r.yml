@@ -6,7 +6,9 @@
 - r: LifeExpectancy.R
 - r: milkprice.R
 - r: prediction_interval.R
+- r: predimed_perm.R
 - r: race_boot.R
+- r: rebound.R
 - r: sampling_distribution.R
 - r: saratoga.R
 - r: solder_boot.R
