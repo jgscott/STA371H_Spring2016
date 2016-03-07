@@ -1,5 +1,6 @@
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
+- r: georgia.R
 - r: hw1.R
 - r: hw2.R
 - r: hw3.R
@@ -7,6 +8,7 @@
 - r: milkprice.R
 - r: prediction_interval.R
 - r: predimed_perm.R
+- r: profs.R
 - r: race_boot.R
 - r: rebound.R
 - r: sampling_distribution.R
