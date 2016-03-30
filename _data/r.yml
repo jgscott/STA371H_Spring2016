@@ -1,5 +1,7 @@
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
+- r: computereturns.R
+- r: covariance.R
 - r: georgia.R
 - r: hw1.R
 - r: hw2.R
