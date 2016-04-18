@@ -1,15 +1,10 @@
 library(mosaic)
 library(fImport) # need to install this the first time you use it
-library(mvtnorm)  # this too
-
-# Import code for bivariate normal
-# Put this line at the top of any script where you need to simulate
-# from a bivariate normal distribution.
-source("http://jgscott.github.io/teaching/r/mvnorm/rbvnorm.R")
 
 # Import helper function
+# Put this line at the top of any script where you need to simulate
+# from past returns using bootstrapping.
 source("http://jgscott.github.io/teaching/r/mvnorm/computereturns.R")
-
 
 # Download data for a few stocks
 mystocks = c("ORCL", "JNJ", "WMT", "XOM", "MRK")
@@ -50,7 +45,7 @@ holdings = holdings*(1+return.today)
 # Compute your new total wealth
 totalwealth = sum(holdings)
 
-#### Now simulate a single day
+#### Now simulate a single trajectory over 20 trading days
 horizon = 20
 totalwealth = 10000
 pweights = c(0.2, 0.2, 0.2, 0.2, 0.2)
