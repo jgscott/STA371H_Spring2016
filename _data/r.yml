@@ -8,6 +8,7 @@
 - r: hw2.R
 - r: hw3.R
 - r: hw7.R
+- r: hw8.R
 - r: LifeExpectancy.R
 - r: milkprice.R
 - r: montecarlo_normal.R
