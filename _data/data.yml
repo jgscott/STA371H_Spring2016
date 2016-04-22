@@ -5,6 +5,7 @@
 - data: bballbets.csv
 - data: birthwt.csv
 - data: bodybrain.csv
+- data: brca.csv
 - data: carauction_test.csv
 - data: carauction_train.csv
 - data: casandie.txt
@@ -21,6 +22,7 @@
 - data: georgia2000.csv
 - data: gonefishing.csv
 - data: googleflu.csv
+- data: greenbuildings.csv
 - data: heights.csv
 - data: house.csv
 - data: hubble.txt
