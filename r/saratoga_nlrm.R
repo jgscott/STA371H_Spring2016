@@ -36,5 +36,5 @@ fstat = (perm3$r.squared - rsquared(lm2))/(1-perm3$r.squared) * (nrow(SaratogaHo
 
 
 hist(fstat, 50, prob=TRUE)
-curve(df(x, nrow(SaratogaHouses) - 8, 2), add=TRUE)
+curve(df(x, nrow(SaratogaHouses) - 8, 2), add=TRUE, lwd=2, col='red')
 
