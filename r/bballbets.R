@@ -2,12 +2,12 @@ library(mosaic)
 
 bballbets = read.csv("../data/bballbets.csv", header=TRUE)
 
-plot(jitter(homewin,0.2) ~ spread, data=bballbets,
+plot(jitter(homewin,0.3) ~ spread, data=bballbets,
 	ylab='Home team victory?', xlab='Point spread',
 	pch=19, col=rgb(0,0,0,0.2), las=1)
 
 # Look at the empirical win frequency within "buckets"
-spread.discrete = cut(bballbets$spread, breaks=seq(-35,45,by=10))
+spread.discrete = cut(bballbets$spread, breaks=seq(-35,45,by=6))
 lm0 = lm(homewin~spread.discrete, data=bballbets)
 points(fitted(lm0) ~ spread, data=bballbets, col='blue', pch=19)
 
@@ -16,7 +16,7 @@ lm1 = lm(homewin~spread, data=bballbets)
 summary(lm1)
 
 plot(jitter(homewin,0.2) ~ spread, data=bballbets,
-	xlab='Home team victory?', ylab='Point spread',
+	ylab='Home team victory?', xlab='Point spread',
 	pch=19, col=rgb(0,0,0,0.2), las=1)
 points(fitted(lm0) ~ spread, data=bballbets, col='blue', pch=19)
 abline(lm1)
@@ -37,7 +37,7 @@ plot(fitted(glm1)~spread,data=bballbets)
 
 # Compare the linear vs logistic fit
 plot(jitter(homewin,0.2) ~ spread, data=bballbets,
-	xlab='Home team victory?', ylab='Point spread',
+	ylab='Home team victory?', xlab='Point spread',
 	pch=19, col=rgb(0,0,0,0.2), las=1)
 points(fitted(lm1)~spread, data=bballbets, col='red', pch=19)
 points(fitted(glm1)~spread,data=bballbets, col='blue', pch=19)

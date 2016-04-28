@@ -1,5 +1,6 @@
 - r: bballbets.R
 - r: bivariate_normal.R
+- r: bootstrap_VAR.R
 - r: bootstrapped_prediction.R
 - r: cheese_demand.R
 - r: computereturns.R
